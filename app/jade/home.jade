@@ -1,4 +1,43 @@
 article.container.main#home-page
     h1 {{title}}
+    .row
+        .col-md-4
+            ul.main-banners-thumbs.list-unstyled
+                li
+                    a.thumb(href="")
+                        img.img-responsive(src="images/mockup/abstract-q-c-640-480-1.jpg", alt="")
+                li
+                    a.thumb(href="")
+                        img.img-responsive(src="images/mockup/abstract-q-c-640-480-2.jpg", alt="")
+                li
+                    a.thumb(href="")
+                        img.img-responsive(src="images/mockup/abstract-q-c-640-480-4.jpg", alt="")
+                li
+                    a.thumb(href="")  
+                        img.img-responsive(src="images/mockup/abstract-q-c-640-480-6.jpg", alt="")                  
+        .col-md-8
+            .main-banners-main.row
+                .col-md-6
+                    a.big_foto(href='')
+                      img.img-responsive( ng-src='{{projects[0].image}}', alt='', title='')
+                .col-md-6
+                    .description
+                        .text
+                          h4.orange
+                            a(href='')
+                              strong {{projects[0].title}}
+                          br
+                          strong Zakres prac
+                          ul
+                            li
+                              | Wdrożenie serwisu na systemie Wordpress, na podstawie dostarczonych projektów graficznych
+                          strong Technologie:
+                          ul
+                            li HTML5, CSS3 , jQuery, Wordpress
+                          span zobacz stronę: 
+                          a.orange(target='_blank', href='') http://blog.graf.pl/blog/
+                  
+                
+
  
  

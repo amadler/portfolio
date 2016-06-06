@@ -1,0 +1,6 @@
+.main-banners-thumbs {
+  padding: 0;
+  list-style: none; }
+  .main-banners-thumbs li {
+    width: 45%;
+    display: inline-block; }
