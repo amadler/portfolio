@@ -13,7 +13,7 @@ var plugins = require('gulp-load-plugins')(),
     path_sassfile = './app/sass/style.scss',
     path_css = './app/css/',
     path_jade = './app/jade/**/*.jade',
-    path_templates = './app/templatess/',
+    path_templates = 'app/templates',
     path_js = ''
 gulp.task('jade', function() {
     return gulp.src(path_jade)

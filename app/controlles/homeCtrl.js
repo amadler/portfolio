@@ -1,3 +1,3 @@
-app = angular.controller( 'HomeCtrl', function($scope, Page) {
-
+app.controller( 'HomeCtrl', function($scope) {
+     $scope.title = 'Strona główna';
 });

@@ -4,8 +4,8 @@ html
     Link( href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet")
     style()
     style()
-    body
-        head.head
+    body(ng-app="appPorfolio")
+        header.head
             #logo
             nav.navbar.navbar-default
               .container
@@ -25,3 +25,4 @@ html
                         | strona główna 
                     li
                       a(href='about') about
+        ng-view

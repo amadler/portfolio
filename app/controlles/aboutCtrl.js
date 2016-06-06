@@ -1,3 +1,3 @@
-app = angular.controller( 'AboutCtrl', function($scope, Page) {
+app.controller( 'AboutCtrl', function($scope) {
 
 });
