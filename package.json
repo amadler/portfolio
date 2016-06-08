@@ -9,9 +9,13 @@
   "author": "Andrzej Madler",
   "license": "ISC",
   "devDependencies": {
+    "gulp-jasmine": "^2.3.0",
     "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
-    "gulp-uglify": "^1.5.3"
+    "gulp-uglify": "^1.5.3",
+    "jasmine-reporters": "^2.1.1",
+    "jasmine-spec-reporter": "^2.4.0"
   }
 }

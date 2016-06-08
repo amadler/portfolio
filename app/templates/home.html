@@ -4,25 +4,22 @@
   <div class="row">
     <div class="col-md-4">
       <ul class="main-banners-thumbs list-unstyled">
-        <li><a href="" class="thumb"><img src="images/mockup/abstract-q-c-640-480-1.jpg" alt="" class="img-responsive"/></a></li>
-        <li><a href="" class="thumb"><img src="images/mockup/abstract-q-c-640-480-2.jpg" alt="" class="img-responsive"/></a></li>
-        <li><a href="" class="thumb"><img src="images/mockup/abstract-q-c-640-480-4.jpg" alt="" class="img-responsive"/></a></li>
-        <li><a href="" class="thumb"> <img src="images/mockup/abstract-q-c-640-480-6.jpg" alt="" class="img-responsive"/></a></li>
+        <li ng-repeat="project in projects" ng-mouseover="changeImage($index)"><a href="" title="{{project.title}}" class="thumb"><img ng-src="{{project.thumb}}" alt="{{project.url.title}}" class="img-responsive"/></a></li>
       </ul>
     </div>
     <div class="col-md-8">
       <div class="main-banners-main row">
-        <div class="col-md-6"><a href="" class="big_foto"><img ng-src="{{projects[0].image}}" alt="" title="" class="img-responsive"/></a></div>
+        <div class="col-md-6"><a href="" class="big_foto"><img ng-src="{{projects[index].image}}" alt="" title="" class="img-responsive"/></a></div>
         <div class="col-md-6">
           <div class="description">
             <div class="text">
-              <h4 class="orange"><a href=""><strong>{{projects[0].title}}</strong></a></h4><br/><strong>Zakres prac</strong>
+              <h4 class="orange"><a href=""><strong>{{projects[index].title}}</strong></a></h4><br/><strong>Zakres prac</strong>
               <ul>
-                <li>Wdrożenie serwisu na systemie Wordpress, na podstawie dostarczonych projektów graficznych</li>
+                <li>{{projects[index].description.jobs}}</li>
               </ul><strong>Technologie:</strong>
               <ul>
-                <li>HTML5, CSS3 , jQuery, Wordpress</li>
-              </ul><span>zobacz stronę: </span><a target="_blank" href="" class="orange">http://blog.graf.pl/blog/</a>
+                <li>{{projects[index].description.tech}}</li>
+              </ul><span>zobacz stronę: </span><a target="_blank" href="{{projects[index].url.href}}" title="{{projects[index].url.title}}" class="orange">{{projects[index].url.text}}</a>
             </div>
           </div>
         </div>

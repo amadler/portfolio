@@ -1,33 +1,14 @@
-app.controller('HomeCtrl', function($scope) {
+app.controller('HomeCtrl', function($scope, $http) {
     $scope.title = 'Strona główna';
-    $scope.projects = [
-        {
-            thumb: 'images/mockup/abstract-q-c-640-480-1.jpg',
-            image: 'images/mockup/abstract-q-c-640-480-1.jpg',
-            title: 'tytuł 1',
-            description: {
-                jobs: 'zakres prac 1',
-                tech: 'Technologie 1'
-            },
-            url: {
-                href: 'www link 1',
-                text: 'www tekst 1',
-                title: 'www title 1'
-            }
-        },
-        {
-            thumb: 'images/mockup/abstract-q-c-640-480-2.jpg',
-            image: 'images/mockup/abstract-q-c-640-480-2.jpg',
-            title: 'tytuł 2',
-            description: {
-                jobs: 'zakres prac 2',
-                tech: 'Technologie 2'
-            },
-            url: {
-                href: 'www link 2',
-                text: 'www tekst 2',
-                title: 'www title 2'
-            }
-        }
-    ]
+    $scope.projects = [];
+    $scope.index= 0;
+
+    $http.get("server/banner-data.js")
+        .then(function (response) {
+            $scope.projects = response.data;
+        });
+
+    $scope.changeImage = function(index) {
+        $scope.index = index;
+    }
 });
