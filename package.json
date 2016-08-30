@@ -17,5 +17,31 @@
     "gulp-uglify": "^1.5.3",
     "jasmine-reporters": "^2.1.1",
     "jasmine-spec-reporter": "^2.4.0"
+  },
+  "dependencies": {
+    "btoa": "^1.1.2",
+    "fs": "0.0.1-security",
+    "glob": "^7.0.6",
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jasmine": "^2.4.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jasmine-spec-reporter": "^2.7.0",
+    "jquery": "^3.1.0",
+    "jsdom": "^9.4.2",
+    "load-grunt-tasks": "^3.5.2",
+    "markdown-it": "^7.0.1",
+    "npm-shrinkwrap": "^6.0.1",
+    "path": "^0.12.7",
+    "time-grunt": "^1.4.0",
+    "util": "^0.10.3"
   }
 }
